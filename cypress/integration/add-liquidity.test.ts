@@ -1,12 +1,12 @@
 describe('Add Liquidity', () => {
   it('loads the two correct tokens', () => {
-    cy.visit('/add/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82-0xe9e7cea3dedca5984780bafc599bd69add087d56')
+    cy.visit('/add/0xA9a9C8ccf854342896CB8d23EffC73E094CD7C8f-0xe9e7cea3dedca5984780bafc599bd69add087d56')
     cy.get('#add-liquidity-input-tokena .token-symbol-container').should('contain.text', 'CAKE')
     cy.get('#add-liquidity-input-tokenb .token-symbol-container').should('contain.text', 'BUSD')
   })
 
   it('does not crash if CAKE is duplicated', () => {
-    cy.visit('/add/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82-0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82')
+    cy.visit('/add/0xA9a9C8ccf854342896CB8d23EffC73E094CD7C8f-0xA9a9C8ccf854342896CB8d23EffC73E094CD7C8f')
     cy.get('#add-liquidity-input-tokena .token-symbol-container').should('contain.text', 'CAKE')
     cy.get('#add-liquidity-input-tokenb .token-symbol-container').should('not.contain.text', 'CAKE')
   })

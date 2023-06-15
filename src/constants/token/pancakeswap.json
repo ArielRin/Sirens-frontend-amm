@@ -7,7 +7,7 @@
     "patch": 1
   },
   "tags": {},
-  "logoURI": "/images/coins/wbnb.png",
+  "logoURI": "/images/coins/REDLC.png",
   "keywords": ["pancake", "default"],
   "tokens": [
     {
@@ -25,17 +25,17 @@
       "decimals": 18
     },
     {
-      "name": "WBNB Token",
-      "symbol": "WBNB",
+      "name": "REDLC Token",
+      "symbol": "REDLC",
       "address": "0xae13d989dac2f0debff460ac112a837c89baa7cd",
       "chainId": 97,
       "decimals": 18,
       "logoURI": "/images/coins/BUSD.png"
     },
     {
-      "name": "WBNB Token",
-      "symbol": "WBNB",
-      "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "name": "Red Light Token",
+      "symbol": "REDLC",
+      "address": "0x00F22F97e249B980A1df5A091FcCbd6599600779",
       "chainId": 56,
       "decimals": 18
     }
